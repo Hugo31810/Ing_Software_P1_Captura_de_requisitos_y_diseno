@@ -1,99 +1,130 @@
-# Práctica 1 – Captura de requisitos y diseño  
-**Ingeniería del Software – Universidad Rey Juan Carlos**
+# Railway Incidence Management System – Requirements & Design
 
-Este repositorio contiene el desarrollo de la **Práctica 1 de la asignatura Ingeniería del Software**, correspondiente al curso académico **2025–2026**, centrada en la **captura de requisitos software y el diseño UML** de un sistema a partir de un caso de estudio propuesto.
+Este repositorio contiene la **fase de análisis y diseño** de un sistema software para la **gestión de incidencias en infraestructuras ferroviarias**, desarrollado como parte de la asignatura **Ingeniería del Software** (URJC).
 
----
-
-## 📌 Objetivo de la práctica
-
-El objetivo de esta práctica es **analizar una especificación de un problema**, identificar y documentar los **requisitos funcionales y de dominio**, y elaborar un **diseño del sistema mediante diagramas UML**, siguiendo una **metodología ágil** (Scrum o Kanban).
-
-La práctica se basa en el caso de estudio descrito en el enunciado oficial proporcionado por la asignatura.
+El proyecto se centra en la **captura de requisitos** y el **diseño UML** de una aplicación web orientada a la **detección, predicción y visualización de incidencias** en vías de tren a partir de datos eléctricos.
 
 ---
 
-## 🧩 Caso de estudio
+## 🎯 Objetivo del proyecto
 
-El sistema a diseñar es una **aplicación web basada en HTTP/REST** para la **detección y predicción de incidencias en vías ferroviarias**, a partir de datos eléctricos obtenidos por dispositivos distribuidos a lo largo de las vías.
+El objetivo principal de este proyecto es:
 
-El sistema contempla las siguientes funcionalidades principales:
+- Analizar un **problema real del dominio ferroviario**
+- Identificar y documentar:
+  - Requisitos funcionales
+  - Requisitos de dominio
+- Diseñar la arquitectura del sistema mediante **diagramas UML**
+- Justificar las decisiones de diseño adoptadas
+- Aplicar una **metodología ágil** para la organización del trabajo
 
-- Lectura de valores de voltaje desde ficheros CSV.
-- Detección de ocupación de una vía ferroviaria por un tren.
-- Identificación y predicción de incidencias:
-  - Ausencia prolongada de datos (más de 2 minutos).
-  - Saltos de voltaje iguales o superiores a 0.5 V.
-- Sistema de suscripción de usuarios a incidencias.
-- Visualización gráfica de incidencias y valores de voltaje.
+Este repositorio corresponde exclusivamente a la **fase de requisitos y diseño** del sistema.
+
+---
+
+## 🧩 Contexto del sistema
+
+Las vías ferroviarias cuentan con **dispositivos eléctricos** que emiten señales de voltaje para indicar si una vía está ocupada o libre.
+
+El sistema diseñado permite:
+
+- Leer datos de voltaje desde ficheros CSV
+- Detectar la ocupación de una vía por un tren
+- Identificar y predecir incidencias, como:
+  - Ausencia prolongada de datos (> 2 minutos)
+  - Saltos bruscos de voltaje (≥ 0.5 V)
+- Gestionar la suscripción de usuarios a incidencias
+- Visualizar gráficamente los valores de voltaje y las incidencias detectadas
+
+La aplicación se concibe como un **sistema web basado en HTTP/REST**.
 
 ---
 
 ## 👥 Equipo y roles
 
-Los integrantes del grupo y sus roles durante el desarrollo de la práctica son los siguientes:
+El proyecto ha sido desarrollado en equipo, con una asignación clara de roles:
 
-### 🧑‍💼 Jefe de Proyecto
+### 🧑‍💼 Project Manager
 - **Hugo Salvador Aizpún**
 
-### 🧪 Analistas Software
-- **Iván De Rada López**  
-- **Raúl Vicente Sánchez**  
+### 🧪 Software Analysts
+- **Iván De Rada López**
+- **Raúl Vicente Sánchez**
 - **Tomás Cano Santa Catalina**
 
-### 🏗️ Arquitectos Software
-- **Pablo Sastre Noriega**  
+### 🏗️ Software Architects
+- **Pablo Sastre Noriega**
 - **Héctor Santiago Martínez**
 
-Cada rol ha asumido las responsabilidades definidas en el enunciado de la práctica, garantizando la correcta separación de tareas y la coordinación del trabajo en equipo.
+Cada rol ha asumido responsabilidades específicas para garantizar la calidad del análisis y del diseño del sistema.
+
+---
+
+## 📐 Requisitos
+
+Los requisitos del sistema se han capturado y documentado de forma estructurada:
+
+- **Requisitos Funcionales (RF)**  
+  Describen las funcionalidades que el sistema debe ofrecer.
+
+- **Requisitos de Dominio (RD)**  
+  Recogen restricciones, reglas y conceptos propios del dominio ferroviario.
+
+Cada requisito incluye:
+- Identificador único
+- Nombre descriptivo
+- Descripción detallada
+
+---
+
+## 🧱 Diseño UML
+
+El diseño del sistema se ha realizado a partir de los requisitos definidos, empleando notación UML estándar.
+
+Se incluyen los siguientes diagramas:
+
+- Diagrama de clases y paquetes
+- Diagrama de despliegue
+- Diagrama de secuencia de una funcionalidad representativa
+
+Además, se documentan las **decisiones de diseño** y los problemas arquitectónicos identificados durante el proceso.
 
 ---
 
 ## 🛠️ Metodología de trabajo
 
-El desarrollo de la práctica se ha realizado siguiendo una **metodología ágil**, seleccionada y coordinada por el jefe de proyecto.
+El desarrollo del proyecto se ha organizado mediante una **metodología ágil** (Scrum o Kanban), con el objetivo de:
 
-La metodología incluye:
-- Organización del trabajo en tareas
-- Asignación de responsabilidades
-- Uso de una herramienta de gestión ágil
-- Seguimiento del progreso durante las distintas semanas
+- Planificar el trabajo por iteraciones
+- Coordinar los distintos roles
+- Facilitar la comunicación entre analistas y arquitectos
+- Realizar un seguimiento continuo del progreso
 
-Toda esta información se encuentra documentada y respaldada con capturas de pantalla en la memoria final.
+El uso de la metodología y la herramienta asociada se documenta en la memoria del proyecto.
 
----
-
-## 📐 Diseño UML
-
-El diseño del sistema se ha elaborado a partir de los requisitos funcionales y de dominio definidos, utilizando herramientas de modelado UML.
-
-Se incluyen:
-- Diagrama de clases y paquetes
-- Diagrama de despliegue
-- Diagrama de secuencia de una funcionalidad relevante
-- Explicación de las decisiones de diseño adoptadas
 
 ---
 
 ## 📄 Documentación
 
-La práctica se acompaña de una **memoria en formato PDF** que incluye:
+El proyecto se acompaña de una **memoria en formato PDF** que recoge:
 
-- Descripción del problema
-- Tablas de requisitos
+- Captura completa de requisitos
 - Diagramas UML
-- Metodología ágil utilizada
+- Metodología utilizada
 - Decisiones de diseño
 - Conclusiones y lecciones aprendidas
-- Bibliografía
 
 ---
 
+## 📌 Nota
 
-## ✍️ Autores
+Este repositorio corresponde a la **fase de análisis y diseño**.  
+La **implementación, testing y rediseño** del sistema se desarrollan en un repositorio independiente (Práctica 2).
 
-Práctica realizada por el **Grupo G6**  
-Asignatura: Ingeniería del Software  
-Universidad Rey Juan Carlos  
-Curso 2025–2026
+---
 
+## ✍️ Autoría
+
+Proyecto desarrollado en el marco de la asignatura **Ingeniería del Software**  
+Universidad Rey Juan Carlos – Curso 2025–2026
