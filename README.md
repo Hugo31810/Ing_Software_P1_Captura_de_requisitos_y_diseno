@@ -49,13 +49,6 @@ Cada rol ha asumido las responsabilidades definidas en el enunciado de la práct
 
 ---
 
-## 🗂️ Contenido del repositorio
-
-La estructura del repositorio es la siguiente:
-
-
----
-
 ## 🛠️ Metodología de trabajo
 
 El desarrollo de la práctica se ha realizado siguiendo una **metodología ágil**, seleccionada y coordinada por el jefe de proyecto.
@@ -96,22 +89,10 @@ La práctica se acompaña de una **memoria en formato PDF** que incluye:
 
 ---
 
-## 📊 Evaluación
-
-La práctica se evalúa según los siguientes criterios:
-
-- Requisitos: 40%
-- Diseño: 40%
-- Metodología: 10%
-- Memoria: 10%
-
-El incumplimiento de los roles asignados o una baja calidad en los requisitos o en el diseño puede suponer el **suspenso de la práctica**.
-
----
 
 ## ✍️ Autores
 
-Práctica realizada por el **Grupo GXX**  
+Práctica realizada por el **Grupo G6**  
 Asignatura: Ingeniería del Software  
 Universidad Rey Juan Carlos  
 Curso 2025–2026
